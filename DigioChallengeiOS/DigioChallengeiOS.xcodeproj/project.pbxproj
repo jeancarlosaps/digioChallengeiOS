@@ -141,13 +141,6 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		7F1546FC2AF8415400AC7B24 /* UIContent */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIContent;
-			sourceTree = "<group>";
-		};
 		7F1546FD2AF8416900AC7B24 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +184,6 @@
 				7FEDC7B32AF4445B00B3BF64 /* DigioChallengeiOS */,
 				7FEDC7CA2AF4445C00B3BF64 /* DigioChallengeiOSTests */,
 				7FEDC7D42AF4445C00B3BF64 /* DigioChallengeiOSUITests */,
-				7F07D67E2AF9D9A800B2DDF4 /* Model */,
 				7FEDC7B22AF4445B00B3BF64 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -209,19 +201,19 @@
 		7FEDC7B32AF4445B00B3BF64 /* DigioChallengeiOS */ = {
 			isa = PBXGroup;
 			children = (
-				7FEDC7C22AF4445C00B3BF64 /* Info.plist */,
-				7F1547002AF8447700AC7B24 /* Coordinator */,
-				7F1546FE2AF8418700AC7B24 /* Extensions */,
-				7F1546FC2AF8415400AC7B24 /* UIContent */,
-				7F1546FB2AF839DF00AC7B24 /* Service */,
 				7F1546FA2AF839C300AC7B24 /* Controller */,
-				7F1546F92AF839B600AC7B24 /* View */,
-				7F1546F82AF839AB00AC7B24 /* ViewModel */,
+				7F1547002AF8447700AC7B24 /* Coordinator */,
 				7F1546FF2AF841B100AC7B24 /* Core */,
 				7F1546F02AF8391C00AC7B24 /* DigioChallengeProtocol.swift */,
-				7FEDC7B82AF4445B00B3BF64 /* ViewController.swift */,
-				7F1546FD2AF8416900AC7B24 /* Resources */,
+				7F1546FE2AF8418700AC7B24 /* Extensions */,
+				7FEDC7C22AF4445C00B3BF64 /* Info.plist */,
 				7FEDC7BF2AF4445C00B3BF64 /* LaunchScreen.storyboard */,
+				7F07D67E2AF9D9A800B2DDF4 /* Model */,
+				7F1546FD2AF8416900AC7B24 /* Resources */,
+				7F1546FB2AF839DF00AC7B24 /* Service */,
+				7F1546F92AF839B600AC7B24 /* View */,
+				7FEDC7B82AF4445B00B3BF64 /* ViewController.swift */,
+				7F1546F82AF839AB00AC7B24 /* ViewModel */,
 			);
 			path = DigioChallengeiOS;
 			sourceTree = "<group>";
