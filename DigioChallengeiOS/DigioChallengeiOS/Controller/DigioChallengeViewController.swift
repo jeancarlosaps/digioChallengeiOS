@@ -10,32 +10,20 @@ import UIKit
 
 class DigioChallengeViewController: UIViewController {
     var viewModel: DigioChallengeViewModel?
-
     
+    override func loadView() {
+        super.loadView()
+        view = DigioChallengeHomeView()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
-        setupConstraints()
-        view.backgroundColor = .red
         
         let service = DigioChallengeService()
         viewModel = DigioChallengeViewModel(service: service)
         fetchData()
     }
     
-    
-    private func setupView() {
-       // view.addSubview()
-    }
-    
-    private func setupConstraints() {
-        NSLayoutConstraint.activate([
-        
-        
-        
-        ])
-    }
-    
+    // TODO: implement
     func fetchData() {
         viewModel?.fetchData { data in
             // Use os dados aqui conforme necessário
@@ -46,5 +34,4 @@ class DigioChallengeViewController: UIViewController {
             }
         }
     }
-    
 }
