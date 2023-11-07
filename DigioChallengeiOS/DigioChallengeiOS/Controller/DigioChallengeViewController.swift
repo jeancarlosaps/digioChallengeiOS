@@ -9,12 +9,18 @@ import Foundation
 import UIKit
 
 class DigioChallengeViewController: UIViewController {
-    let viewModel = DigioChallengeViewModel()
+    var viewModel: DigioChallengeViewModel?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         setupConstraints()
         view.backgroundColor = .red
+        
+        let service = DigioChallengeService()
+        viewModel = DigioChallengeViewModel(service: service)
+        fetchData()
     }
     
     
@@ -30,5 +36,15 @@ class DigioChallengeViewController: UIViewController {
         ])
     }
     
+    func fetchData() {
+        viewModel?.fetchData { data in
+            // Use os dados aqui conforme necessário
+            print(data)
+            // Atualize a interface do usuário com os dados obtidos, por exemplo:
+            DispatchQueue.main.async {
+                // Atualize a UI aqui
+            }
+        }
+    }
     
 }
